@@ -130,7 +130,7 @@ def test(csv_file,month_to_add,start_date,year):
 
 
 def importing(google_sheet,google_worksheet,csv_file,month_to_add,start_date,year):
-    sa = gspread.service_account(filename="/Users/luanjiechen/Desktop/Personal Projects/Budget_python/ss.json/service_account.json")
+    sa = gspread.service_account(filename="")
     sh = sa.open(google_sheet)
     wks = sh.worksheet(google_worksheet) 
     rows = budgeting(csv_file,month_to_add,start_date,year) 
